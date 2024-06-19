@@ -1,0 +1,427 @@
+html
+{
+  max-width: 100%;
+}
+
+body {
+  border: 0px solid red;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: auto !important;
+
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  margin: 0px;
+  padding: 0px;
+}
+
+header
+{
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+nav
+{
+  border-top: 5px solid #1C4583;
+  border-bottom: 2px solid gray;
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  margin: 0;
+  padding: 10px 0 15px 0 !important;
+  width: auto;
+  background-color: #1C4583 !important
+}
+
+ nav a.nav-link
+ {
+   color: #fff !important;
+ }
+
+ div#title_collection 
+{
+  border: 0px solid red;
+  display: inline; 
+  
+}
+
+div#title_collection small
+{
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 15px 10px 0px 20px;
+  color: #fff
+}
+ 
+div#title_collection h2
+ {
+  margin-bottom: 0;
+   /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+   padding: 0 0 0 40px;
+   color: #fff;
+   float: left
+ }
+
+ div#title_collection h2 a
+ {
+   color: #fff;
+   text-decoration: none;
+ }
+
+h1#subtitle
+{
+  margin-bottom: 0;
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  text-align: center;
+  padding: 50px 0 60px 0;
+  background-color: #76C1E3;
+  color: #000;
+}
+
+
+/* Note */
+
+ .wrapper {
+  
+  border: 0px solid red;
+  margin-top: 0;
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  padding: 0 ;
+  width: 100%;  
+  max-width: auto;
+  display: grid;
+   /* grid-template-columns: 100px auto 1fr 350px; */
+  /* grid-template-columns: 120px 500px 1fr 300px; */
+  grid-template-columns: 10vw 25vw 1fr auto;
+  grid-gap: 0px;
+  background-image: linear-gradient(#76C1E3, #CEE7F1);
+  color: #444;
+}
+
+/*  /////////////////////////// Type of clouds according altitude ///////////////////////////// */
+
+/* SUBGRIDS WRAPPERS */
+
+/* SUBGRID 1: High altutude clouds  */
+div.subgrid_1 {
+  border: 0px solid red;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-gap: 0px;
+    /* background-color: #fff; */
+    color: #444;
+       /* centers items horizontally */
+  align-items: center; /* centers items vertically */
+ }
+
+
+  /* SUBGRID 2: Middle altutude clouds  */
+ div.subgrid_2 {
+  border: 0px solid red;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-gap: 0px;
+    /* background-color: #fff; */
+    color: #444;     
+    align-items: end; /* centers items vertically */
+    padding: 0;
+    margin: 0
+
+ }
+
+ /* SUBGRID 3: Low altutude clouds  */
+
+ .subgrid_3 {
+  border: 0px solid red;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-gap: 0px;
+    /* background-color: #fff; */
+    color: #444;
+ }
+
+/* STARTS Subgrids */
+/* Cirrocumulus, altocumulus, cumulus */
+
+.aa {
+  grid-column: 1 / 1;    
+  grid-row: 1 / 3;
+}
+
+/* Cirrostratus, altostratus */
+.bb {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+/* Cirrus, stratus */
+.cc {
+  grid-column: 3 / 3;
+  /* grid-column-end: 4; */
+  grid-row: 1 / 2;
+  /* grid-row-end: 3; */
+}
+/* ENDS Subgrids */
+  
+/* ########################### */ 
+
+/* High ALTITUDE legend */
+/*  COLUMN 1  / ROW 1 - 2 */ 
+div.a {
+    grid-column: 1 / 2;    
+    grid-row: 1 / 2;
+    padding: 10px 0 0 40px;
+  }
+/* ########################### */ 
+/* CUMULUNIMBUS column */ 
+/*  COLUMN 2  / ROW 1 - 4 */ 
+div.c_n 
+  {
+    grid-column: 2 / 2;
+    /* grid-column-end: 4; */
+    grid-row: 1 / 4;
+    /* grid-row-end: 2; */     
+    align-items: ; /* centers items vertically */
+    z-index: 1000;
+    justify-content: left; 
+    padding: 0 0 0 40px;
+  }
+
+  div.c_n img
+  {
+    border: 0px solid blue;
+    z-index: 1000;
+    margin-right: 50px;
+  }
+  
+/* ########################### */ 
+
+ 
+
+
+/* ########################### */ 
+
+  /* High  clouds */
+  /*  COLUMN 3 / ROW 1 - 2 */
+  div.b {
+    grid-column: 3 / 3;
+    grid-row: 1 / 2;
+  }
+
+  
+  /* ########################### */ 
+  /* Middle ALTITUDE */
+  /*  COLUMN 1 - 2 / ROW 2 - 2 */ 
+  div.c {
+    grid-column: 1 / 2;
+    /*  grid-column-end: 2; */
+    grid-row: 2 / 2;
+    /* grid-row-end: 2; */
+    padding: 10px 0 0 40px;
+  }
+  
+/* Middle clouds */
+/*  COLUMN 3 - 3 / ROW 2 - 3 */ 
+  .d {
+    grid-column: 3 / 3;
+    /* grid-column-end: 2; */
+    grid-row: 2 / 3;
+    /* grid-row-end: 3; */
+  }
+
+ /* ########################### */ 
+/*  Low ALTITUDE */
+/*  COLUMN 1 - 2 / ROW 3 - 3 */ 
+
+  div.e {
+    grid-column: 1 / 2;
+    /* grid-column-end: 4; */
+    grid-row: 3 / 3;
+    /* grid-row-end: 2; */
+    padding: 10px 0 0 40px;
+  }
+
+/*  Low clouds */
+/*  COLUMN 1 - 2 / ROW 3 - 3 */ 
+  div.f {
+    grid-column: 3 / 3;
+    /* grid-column-end: 4; */
+    grid-row: 3 / 3;
+    /* grid-row-end: 2; */
+  }
+/* ########################### */ 
+
+  /* NIMBOSTRATUS column */
+  /*  COLUMN 4 - 4 / ROW 1 - 2 */ 
+  
+  div.n_s 
+  {
+    border: 0px solid red;
+    grid-column: 4 / 4;
+    /* grid-column-end: 4; */
+    grid-row: 2 / 5;
+    /* grid-row-end: 2; */     
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  div.n_s img
+  {
+    border: 0px solid red;
+    padding: 0;
+    margin: 0;
+ 
+  }
+  
+  /* ########################### */ 
+  
+  div.radar 
+  {
+    border: 0px solid red;
+    grid-column: 2/ 2;
+    /* grid-column-end: 4; */
+    grid-row: 3 / 6;
+    /* grid-row-end: 2; */     
+    z-index: 2000;
+  }
+
+
+
+  div.radar figure
+  {
+    /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+    margin: 15vh 0 0 15vw;
+    /* opacity:0.7; */
+  }
+  
+  div.radar figure figcaption
+  {
+    margin: 0px 0 10px 0;
+  }
+
+/* ########################### */ 
+div#cc_licence
+{
+  border: 0px solid red;
+  margin: 0;
+  padding: 10vh 2vw 0 0;
+  float: right;
+  
+}
+
+  /* ########################### */ 
+
+  div.horizonte
+  {
+    border: 0px solid red;
+    grid-column: 1/ 5;
+    /* grid-column-end: 4; */
+    grid-row: 5 / 5;
+    /* grid-row-end: 2; */     
+    background-image: url(../img/svg/clouds/horizonte.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18vh;
+   }
+
+   /* ########################### */ 
+  div.balloon
+  {
+    position: absolute;
+    top: 70vh;
+    left: 81vw;
+    
+    /* top: 68%;
+    left: 79%; */
+  }
+  
+  
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// ///////////////////////// */
+
+    /* //////////////////////////////   COSMETICS ///////////////////////// */
+/* //////////////////////////////   COSMETICS ///////////////////////// */
+  /* //////////////////////////////   COSMETICS ///////////////////////// */
+ /* .box 
+  {
+    border: 1px solid red;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+*/
+
+  /* BACKGROUNDS */
+div.high_clouds
+{
+	/*  background-image: url('../img/svg/high_clouds.svg');	*/
+  border: 0;
+  /* background-color: #A7CFE2; */
+  /* padding: 20px; */
+  height: 20vh; /* Force heigh */
+}
+
+div.middle_clouds
+{
+  border: 0;
+  /* background-image: url('../img/svg/middle_clouds.svg');	*/
+  /* background-color: #A7CFE2;
+  background-repeat: no-repeat;*/
+  /* background-size: cover; */
+  padding: 20px; 
+  height: 20vh; /* Force heigh */
+}
+
+
+div.low_clouds
+{
+  
+   /* background-image: url('../img/svg/low_clouds.svg'); */
+   /* background-color: #c1ddea;	
+  background-repeat: no-repeat; */
+  /* background-size: cover; */
+   padding: 20px;
+  height: 20vh; /* Force heigh */
+}
+
+div.b,
+div.a
+{
+  border-top: 1px dotted #fff;
+}
+
+div.a,
+div.b,
+div.c,
+div.d 
+{
+  border-bottom: 1px dotted #fff;
+}
+
+
+
+
+
+
+/* Bootstrap Tooltips */
+
+.tooltip-inner {
+  width: auto !important; 
+  max-width: auto;
+  background-color: #0047AB !important;
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  padding: 1px 10px 15px 10px;  
+  margin: 50px 0 0 0;
+  color: #fff;
+  text-align: justify;
+}
+
+
+
+
