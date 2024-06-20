@@ -6,8 +6,10 @@ html
 body {
   border: 0px solid red;
   width: 100% !important;
-  max-width: 100% !important;
-  min-width: auto !important;
+  /* */
+  max-width: auto !important;
+ /*  */
+  min-width: 1280px !important; /* 1280 */
 
   /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
   margin: 0px;
