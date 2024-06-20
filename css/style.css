@@ -5,11 +5,11 @@ html
 
 body {
   border: 0px solid red;
-  width: 100% !important;
+  width:  100% !important;
   /* */
   max-width: auto !important;
  /*  */
-  min-width: 1280px !important; /* 1280 */
+  min-width: auto !important; /* 1280 */
 
   /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
   margin: 0px;
@@ -23,7 +23,8 @@ header
   width: auto;
 }
 
-nav
+/* Main Navbar */
+nav#main-navbar
 {
   border-top: 5px solid #1C4583;
   border-bottom: 2px solid gray;
@@ -34,34 +35,50 @@ nav
   background-color: #1C4583 !important
 }
 
- nav a.nav-link
+ nav#main-navbar a.nav-link
  {
    color: #fff !important;
  }
 
+ /* Clouds & Other Meteors */
  div#title_collection 
 {
   border: 0px solid red;
   display: inline; 
-  
 }
 
+/* Secondary Navbar */
+ nav#secondary-navbar
+{
+  
+  border: 0px solid red;
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  margin: 0;
+  padding: 5px 0 0 0 !important;
+  width: auto;
+  background-color: #76C1E3 !important
+}
+
+
+/* Select any cloud to Go to image collection */
 div#title_collection small
 {
   display: block;
   float: left;
   margin: 0;
-  padding: 15px 10px 0px 20px;
-  color: #fff
+  /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
+  padding: 5px 0 0px 40px;
+  color: #000
 }
  
+/* Clouds & Oter Meteors */
 div#title_collection h2
  {
-  margin-bottom: 0;
+   border: 0px solid red;
    /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
-   padding: 0 0 0 40px;
+   padding: 0  ;
+   margin: 0 0 0 38px;
    color: #fff;
-   float: left
  }
 
  div#title_collection h2 a
@@ -69,15 +86,16 @@ div#title_collection h2
    color: #fff;
    text-decoration: none;
  }
-
+/* Clouds spotted in Guadalajara Jalisco */
 h1#subtitle
 {
   margin-bottom: 0;
   /* [TOP] [RIGHT] [BOTTOM] [LEFT] */
   text-align: center;
-  padding: 50px 0 60px 0;
+  padding: 10px 0 60px 0;
   background-color: #76C1E3;
   color: #000;
+  
 }
 
 

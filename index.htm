@@ -56,9 +56,9 @@ rel="stylesheet"/>
 <body>
   
 <header>  
-    <nav class="navbar  navbar-expand-lg " >
+    <nav class="navbar  navbar-expand-lg" id="main-navbar" >
         <div class="container-fluid">
-            <div id="title_collection"> <h2> <a href="https://leobardooscar.github.io/clouds" title="Go to full coillection"> Clouds & Other Meteors...</a> </h2> <small>Select any cloud to Go to image collection. </small></div>
+            <div id="title_collection"> <h2> <a href="https://leobardooscar.github.io/clouds" title="Go to full coillection"> Clouds & Other Meteors...</a> </h2> </div>
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"> <!-- Hamburguer --> </span>
@@ -114,14 +114,28 @@ rel="stylesheet"/>
                   <li><a class="dropdown-item" href="https://leobardooscar.github.io/clouds/browse.html#stratus">Stratus</a></li>
                 </ul>
               </li>
+
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    OTHER Clouds
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://leobardooscar.github.io/clouds/browse.html#cumulus">Cumulus</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://leobardooscar.github.io/clouds/browse.html#stratocumulus">Stratocumulus</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="https://leobardooscar.github.io/clouds/browse.html#stratus">Stratus</a></li>
+                  </ul>
+                </li>
+          <!--    
               <li class="nav-item">
-                <a class="nav-link" href="https://leobardooscar.github.io/clouds/">/&nbsp; Full Collection</a>
+                <a class="nav-link" href="https://leobardooscar.github.io/clouds/">&nbsp; Full Collection</a>
               </li>
           
                 <li class="nav-item">
                     <a class="nav-link" href="http://iam.cucei.udg.mx/radar/iam/"> /&nbsp; Doppler Radar </a>
                   </li>
-                  <!-- <li class="nav-item">
+                   <li class="nav-item">
                       <a class="nav-link" href="#"> /&nbsp; About</a>
                     </li>
                     -->
@@ -130,8 +144,44 @@ rel="stylesheet"/>
           </div>
         </div>
       </nav>
-      
-      <h1 id="subtitle">Clouds spotted in Guadalajara Jalisco, Mexico (20.6752° N, 103.3473° W). </h1> 
+
+<!-- //////////////////////////////////////////////////////////////////////// SECOND NAVIGATION BAR /////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////// SECOND NAVIGATION BAR /////////////////////////////////////////////////////////////////////// -->
+
+      <nav class="navbar  navbar-expand-lg" id="secondary-navbar" >
+          <div class="container-fluid">
+              <div id="title_collection"> <small> Select any cloud to Go to image collection. </small></div>
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> -->
+              <!-- <span class="navbar-toggler-icon">  Hamburguer  </span> -->
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <!-- Align left < ME   MS-auto > align right -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                            
+                <li class="nav-item">
+                  <a class="nav-link" href="https://leobardooscar.github.io/clouds/">/&nbsp; Full Collection</a>
+                </li>
+            
+                  <li class="nav-item">
+                      <a class="nav-link" href="http://iam.cucei.udg.mx/radar/iam/"> /&nbsp; Clouds info </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://iam.cucei.udg.mx/radar/iam/"> /&nbsp; About </a>
+                      </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#"> /&nbsp; About</a>
+                      </li>
+                      -->
+              </ul>
+              
+            </div>
+          </div>
+        </nav>
+
+      <!-- //////////////////////////////////////////////////////////////////////// SECOND NAVIGATION BAR /////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////// SECOND NAVIGATION BAR /////////////////////////////////////////////////////////////////////// -->
+  
+      <h1 id="subtitle">Clouds spotted in Guadalajara Jalisco, Mexico </h1> <!-- <p>(20.6752° N, 103.3473° W). </p> -->
 </header>
 
 <div class="wrapper">
@@ -382,7 +432,7 @@ rel="stylesheet"/>
           <p> In meteorology, a phenomenon observed in the atmosphere or on the surface of the Earth is known as a <i>meteor</i>. It may be a form of precipitation, a suspension or a deposit of liquid or solid particles. </p>
           <p>
             The present collection consists of <i>meteors</i> observed from 2010 to 2024.  
-            Sighting point: Guadalajara Metropolitan Area (Northwest zone). Western Mexico region (20.6752° N, 103.3473° W).
+            Sighting point: Guadalajara Metropolitan Area (Northwest zone). Western Mexico region (20.6752° N, 103.3473° W). 1,500 MAMSL. 
           </p>
         </div>
         <!-- Grid column -->
@@ -454,7 +504,7 @@ rel="stylesheet"/>
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+  <div class="text-center p-4 footer-licence" style="background-color: rgba(0, 0, 0, 0.05);">
       
    &copy; 2024, Leobardo Óscar Alcántara Ocaña. &nbsp; 
     <span>
